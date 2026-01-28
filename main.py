@@ -16,7 +16,7 @@ client = discord.Client(intents=intents)
 if GOOGLE_API_KEY:
     genai.configure(api_key=GOOGLE_API_KEY)
     # 使用 Flash 模型 (速度快、免費額度高)
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-pro')
 else:
     print("警告：未偵測到 GOOGLE_API_KEY，AI 功能將無法使用。")
 
